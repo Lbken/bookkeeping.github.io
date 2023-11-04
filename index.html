@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WeedHurry Bookkeeping</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WeedHurry Bookkeeping</h1>
+        <div class="form-container">
+            <label for="transaction-description">Transaction Description:</label>
+            <input type="text" id="transaction-description" placeholder="Enter description" required>
+            <label for="transaction-amount">Transaction Amount:</label>
+            <input type="number" id="transaction-amount" placeholder="Enter amount" required>
+            <button onclick="recordTransaction()">Record Transaction</button>
+        </div>
+        <div class="records-container">
+            <h2>Transaction Records</h2>
+            <ul id="transaction-list"></ul>
+            <button onclick="exportToCSV()">Export as CSV</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
